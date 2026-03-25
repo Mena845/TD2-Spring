@@ -1,5 +1,6 @@
-package com.example.restservice;
+package com.example.restservice.validator;
 
+import com.example.restservice.Exception.BadRequestException;
 import com.example.restservice.Controller.Student;
 
 import java.util.List;
