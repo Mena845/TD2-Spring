@@ -15,7 +15,7 @@ public class StudentController {
     private final StudentService service = new StudentService();
     private final StudentValidator validator = new StudentValidator();
 
-    // ✅ A) GET /welcome
+    //  A) GET /welcome
     @GetMapping("/welcome")
     public ResponseEntity<?> welcome(@RequestParam(required = false) String name) {
 
@@ -27,7 +27,7 @@ public class StudentController {
         return ResponseEntity.ok("Welcome " + name);
     }
 
-    // ✅ B) POST /students
+    //  B) POST /students
     @PostMapping("/students")
     public ResponseEntity<?> createStudents(@RequestBody List<Student> newStudents) {
 
@@ -46,7 +46,7 @@ public class StudentController {
         }
     }
 
-    // ✅ C) GET /students
+    //  C) GET /students
     @GetMapping("/students")
     public ResponseEntity<?> getStudents(@RequestHeader(value = "Accept", required = false) String accept) {
 
